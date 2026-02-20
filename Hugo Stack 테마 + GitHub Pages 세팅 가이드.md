@@ -70,19 +70,16 @@ config/
 ```
 
 
-`config.yaml` 파일을 아래처럼 수정:
+`config/_default/hugo.toml` 파일을 아래처럼 수정:
 
-```yaml
-baseURL                = "https://YOUR_USERNAME.github.io/"
+```toml
+baseURL                = "https://rybbit3.github.io/"
 languageCode           = "ko"
-title                  = "지현의 보안 블로그"
+title                  = "리빗의 보안 블로그"
+theme                  = "hugo-theme-stack"
 
-defaultContentLanguage        = "ko"
-defaultContentLanguageInSubdir = false   # 한국어는 루트(/), 영어는 /en/
-hasCJKLanguage                = true     # 한국어 포함이므로 true로 변경
-
-[[module.imports]]
-    path = "github.com/CaiJimmy/hugo-theme-stack/v3"
+defaultContentLanguage = "ko"
+hasCJKLanguage         = true
 
 [pagination]
     pagerSize = 5
@@ -392,27 +389,27 @@ draft: false
 ## 📊 최종 URL 구조
 
 ```
-https://username.github.io/                    # 한국어 홈
-https://username.github.io/en/                 # 영어 홈
-https://username.github.io/post/azure-sentinel-soar/   # 한국어 포스트
-https://username.github.io/en/post/azure-sentinel-soar/ # 영어 포스트
-https://username.github.io/categories/devsecops/       # 카테고리
+https://rybbit3.github.io/                    # 한국어 홈
+https://rybbit3.github.io/en/                 # 영어 홈
+https://rybbit3.github.io/p/첫-번째-포스트/   # 한국어 포스트
+https://rybbit3.github.io/en/p/first-post/    # 영어 포스트
+https://rybbit3.github.io/categories/         # 카테고리
 ```
 
 ---
 
 ## ✅ 세팅 체크리스트
 
-- [ ] Hugo Extended 설치
-- [ ] Stack 테마 서브모듈 추가
-- [ ] config.yaml 한/영 언어 설정
-- [ ] i18n/ko.yaml, en.yaml 번역 파일
-- [ ] content/ko, content/en 폴더 구조
-- [ ] 카테고리 페이지 (_index.md) 생성
-- [ ] 첫 번째 포스트 작성
-- [ ] GitHub Actions deploy.yml 추가
-- [ ] GitHub Pages 소스 → GitHub Actions 설정
-- [ ] Obsidian Enveloppe 플러그인 연동
+- [x] Hugo Extended 설치
+- [x] Stack 테마 서브모듈 추가
+- [x] config/_default/hugo.toml 한/영 언어 설정
+- [x] i18n/ko.yaml, en.yaml 번역 파일
+- [x] content/ko, content/en 폴더 구조
+- [x] 카테고리 페이지 생성
+- [x] 첫 번째 포스트 작성
+- [x] GitHub Actions deploy.yml 추가
+- [x] GitHub Pages 소스 → GitHub Actions 설정
+- [ ] Obsidian Enveloppe 플러그인 연동 (선택사항)
 
 ---
 
