@@ -1,0 +1,19 @@
+[ko]
+    languageName = "한국어"
+    title        = "리빗의 보안 블로그"
+    weight       = 1
+    contentDir   = "content/ko"
+
+    [ko.params.sidebar]
+        subtitle = "SOC → DevSecOps 전환 여정을 기록합니다"
+
+[en]
+    languageName = "English"
+    title        = "Rybbit's Security Blog"
+    weight       = 2
+    contentDir   = "content/en"
+
+    [en.params.sidebar]
+        subtitle = "Documenting my journey from SOC to DevSecOps"
+
+

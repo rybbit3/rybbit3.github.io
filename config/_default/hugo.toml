@@ -1,0 +1,17 @@
+baseURL                = "https://rybbit3.github.io/"
+languageCode           = "ko"
+title                  = "리빗의 보안 블로그"
+theme                  = "hugo-theme-stack"
+
+defaultContentLanguage = "ko"
+hasCJKLanguage         = true
+
+[pagination]
+    pagerSize = 5
+
+[permalinks]
+    post = "/p/:slug/"
+    page = "/:slug/"
+
+[services.disqus]
+    shortname = "hugo-theme-stack"
